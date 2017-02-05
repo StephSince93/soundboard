@@ -103,7 +103,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="Bjb-wp-s2j" id="PZs-kN-hNB"/>
                         <outlet property="nameTextField" destination="9Fo-vo-7mV" id="Gv9-j1-VdG"/>
+                        <outlet property="playButton" destination="Mf5-xS-tKN" id="dFC-XX-V6z"/>
                         <outlet property="recordButton" destination="25h-gB-4qV" id="hFh-Fc-T5f"/>
                     </connections>
                 </viewController>
