@@ -27,7 +27,9 @@ class SoundViewController: UIViewController {
         super.viewDidLoad()
         
         setupRecorder()
+        //greys out the add button and play button
         playButton.isEnabled = false
+        addButton.isEnabled = false
         // Do any additional setup after loading the view.
     }
     
@@ -73,8 +75,10 @@ class SoundViewController: UIViewController {
             
             //Change button title to record
             recordButton.setTitle("Record", for: .normal)
-            
+            //allows user to press the play button and add button once they record a sound
             playButton.isEnabled = true
+            addButton.isEnabled = true
+            
         }
         else
         {
@@ -103,6 +107,16 @@ class SoundViewController: UIViewController {
     
     @IBAction func addTapped(_ sender: Any)
     {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let sound = Sound(context: context)
+        sound.name = nameTextField.text
+        //NS data
+        sound.audio = NSData(contentsOf: audioURL!)
+        
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        
+        //goes back to previous screen once the user adds the sound
+        navigationController!.popViewController(animated: true)
         
         
     }
