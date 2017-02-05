@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					A3EBDECF1E46F6C600295695 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2329JA72M3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -264,6 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2329JA72M3;
 				INFOPLIST_FILE = SoundBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.StephenRomero.SoundBoard;
@@ -276,6 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2329JA72M3;
 				INFOPLIST_FILE = SoundBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.StephenRomero.SoundBoard;
